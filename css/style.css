@@ -1,0 +1,73 @@
+@font-face {
+	font-family: 'avisaforsara';
+	src:url('fonts/avisaforsara.eot?vbgmpw');
+	src:url('fonts/avisaforsara.eot?#iefixvbgmpw') format('embedded-opentype'),
+		url('fonts/avisaforsara.woff?vbgmpw') format('woff'),
+		url('fonts/avisaforsara.ttf?vbgmpw') format('truetype'),
+		url('fonts/avisaforsara.svg?vbgmpw#avisaforsara') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.im {
+	font-family: 'avisaforsara';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.im-quotes:before {
+	content: "\22";
+}
+.im-office:before {
+	content: "\e600";
+}
+.im-profile:before {
+	content: "\e601";
+}
+.im-file:before {
+	content: "\e605";
+}
+.im-file2:before {
+	content: "\e606";
+}
+.im-phone:before {
+	content: "\e607";
+}
+.im-screen:before {
+	content: "\78";
+}
+.im-airplane:before {
+	content: "\e602";
+}
+.im-happy:before {
+	content: "\e603";
+}
+.im-sad:before {
+	content: "\e604";
+}
+.im-angry:before {
+	content: "\e609";
+}
+.im-wondering:before {
+	content: "\e60a";
+}
+.im-question:before {
+	content: "\e60b";
+}
+.im-close:before {
+	content: "\e60c";
+}
+.im-arrow-right:before {
+	content: "\e60d";
+}
+.im-tab:before {
+	content: "\e608";
+}

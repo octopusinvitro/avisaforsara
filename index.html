@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>   <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>   <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>A visa for Sara</title>
+		<meta name="description" content="Countries of the world, allow Sara to travel!">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+
+		<link href='http://fonts.googleapis.com/css?family=Imprima' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/main.css">
+		<!--[if lt IE 8]>
+			<link rel="stylesheet" href="css/ie7/ie7.css">
+			<script async src="css/ie7/ie7.js"></script>
+		<![endif]-->
+		<script async src="js/vendor/modernizr-2.6.2.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+		<script>
+			// On scroll call the draw function
+			$(window).scroll(function() {
+				drawLines();
+			});
+
+			// If you have more than one SVG per page this will pick it up
+			function drawLines(){
+				$.each(
+					$(".cross"), 
+					function(i, val){
+						var line = val;
+						drawLine($(this), line);
+					}
+				);
+			}
+
+			// Draw the line
+			function drawLine(container, line){
+				var length = 0;
+				var pathLength = line.getTotalLength();
+				var distanceFromTop = container.offset().top - $(window).scrollTop() -100;
+				var percentDone = 1 - (distanceFromTop / $(window).height());
+				length = percentDone * pathLength;
+				line.style.strokeDasharray = [length,pathLength].join(' ');
+				console.log("strokeDasharray: "+[length, pathLength].join(' '));
+			}
+		</script>
+	</head>
+	<body>
+		<!--[if lt IE 7]>
+			<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+
+		<header>
+			<h1>A visa for Sara</h1>
+			<div class="grid_1of2">
+				<a href="http://sarasoueidan.com/about.html"><img src="img/sara.jpg" width="250" height="250"></a>
+			</div>
+			<div class="grid_1of2">
+				<p> We want to see her at conferences, but for that...<span class="visa">...she needs a visa!</span></p>
+				<p>See what the human race will be missing if she can't travel: find her work at her <a href="http://sarasoueidan.com/about.html">webpage</a> and her <a href="https://twitter.com/SaraSoueidan">twitter</a>. </p>
+			</div>
+		</header>
+		
+		<section class="context">
+			<h2>Sara wants to visit us!</h2>
+			<p>Sara is a front-end Web Developer living in Lebanon. She is also known for her excellent posts and passion about CSS &amp; SVG. She is invited  to conferences, so she can spread the word, we can learn and grow, and the whole community of web devs is pushed forwards!</p>
+
+			<p>However, sometimes she can't go because... she's denied a visa.</p>
+
+			<p>In return, we too are denied the pleasure of receiving her wisdom, the whole community is affected, and a kitten dies. AT LEAST THINK ABOUT THAT KITTEN.</p>
+			
+			<svg version="1.1"
+				baseProfile="full"
+				xmlns="http://www.w3.org/2000/svg"
+				xmlns:xlink="http://www.w3.org/1999/xlink"
+				xmlns:ev="http://www.w3.org/2001/xml-events"
+				viewBox="0 0 640 480"
+				enable-background="new 0 0 640 480"
+				xml:space="preserve">
+				
+				<title>Sara against the world</title>
+				<style type="text/css" >
+					/* <![CDATA[ */
+					.cross, .face {
+						stroke-linecap: round;
+					}
+					.cross {
+						stroke: #b7382f;
+						stroke-width: 4px;
+					}
+					.face{
+						stroke: #000000;
+						stroke-width: 2px;
+						fill: transparent;
+					}
+					/* ]]> */
+				</style>
+				
+				<defs>
+					<pattern id="img1" patternUnits="userSpaceOnUse" width="640" height="480">
+						<image xlink:href="css/worldmap.svg" x="0" y="0" width="640" height="480" fill="#000" />
+					</pattern>
+				</defs>
+
+				<path fill="url(#img1)" d="M0 0 H 640 V 480 H 0 Z" />
+
+				<!-- North America -->
+				<path class="cross" d="M220  90 l  20 20" />
+				<path class="cross" d="M240  90 l -20 20" />
+
+				<path class="cross" d="M100 130 l  20 20" />
+				<path class="cross" d="M120 130 l -20 20" />
+
+				<path class="cross" d="M95  190 l  20 20" />
+				<path class="cross" d="M115 190 l -20 20" />
+
+				<path class="cross" d="M160 180 l  20 20" />
+				<path class="cross" d="M180 180 l -20 20" />
+				
+				<!-- Central America -->
+				<path class="cross" d="M140 250 l  20 20" />
+				<path class="cross" d="M160 250 l -20 20" />
+
+				<!-- South America -->
+				<path class="cross" d="M180 270 l  20 20" />
+				<path class="cross" d="M200 270 l -20 20" />
+
+				<path class="cross" d="M210 310 l  20 20" />
+				<path class="cross" d="M230 310 l -20 20" />
+
+				<path class="cross" d="M170 370 l  20 20" />
+				<path class="cross" d="M190 370 l -20 20" />
+
+				<!-- Europe -->
+				<path class="cross" d="M300 180 l  20 20" />
+				<path class="cross" d="M320 180 l -20 20" />
+				
+				<path class="cross" d="M320 130 l  20 20" />
+				<path class="cross" d="M340 130 l -20 20" />
+
+				<!-- Asia -->
+				<path class="cross" d="M420 150 l  20 20" />
+				<path class="cross" d="M440 150 l -20 20" />
+				
+				<path class="cross" d="M480 120 l  20 20" />
+				<path class="cross" d="M500 120 l -20 20" />
+
+				<path class="cross" d="M450 200 l  20 20" />
+				<path class="cross" d="M470 200 l -20 20" />
+
+				<!-- Africa -->
+				<path class="cross" d="M320 250 l  20 20" />
+				<path class="cross" d="M340 250 l -20 20" />
+
+				<path class="cross" d="M330 320 l  20 20" />
+				<path class="cross" d="M350 320 l -20 20" />
+
+				<!-- Australia -->
+				<path class="cross" d="M520 340 l  20 20" />
+				<path class="cross" d="M540 340 l -20 20" />
+
+				<!-- Sara -->
+				<polygon points="360 180, 340 230, 380 230" fill="#b7382f" />
+				
+				<ellipse cx="360" cy="200" rx="15" ry="20" fill="#b7382f" />
+				<ellipse cx="360" cy="205" rx="14" ry="15" fill="#ddd2c0" />
+				
+				<path class="face" d="M350 198 l  8 -4" />
+				<path class="face" d="M370 198 l -8 -4"" />
+
+				<path class="face" d="M350 202 q 4 10 8 0" />
+				<path class="face" d="M362 202 q 4 10 8 0" />
+
+				<path class="face" d="M355 215 q 5 -10 10 0" />
+			</svg>
+			
+			<p>In 2013, Lebanese citizens had visa-free or visa on arrival access to only 38 countries and territories. In <a href="https://www.henleyglobal.com/files/download/hvri/VISA_Index_2014_04_11_Web.pdf" >the Henley &amp; Partners Visa Restriction Index</a>, a global ranking of countries according to the travel freedom that their citizens enjoy, Lebanon holds the 88th place, with a score of 38. The maximum score is 173.</p>
+		</section>
+
+		<section class="traveling">
+			<h2>Going to conferences</h2>
+			<div class="grid_1of2">
+				<h3>What YOU do to travel</h3>
+				<ul>
+					<li>
+						<span aria-hidden="true" class="im im-profile"></span>
+						<span>Check that your passport is up to date</span>
+					</li>
+					<li>
+						<span aria-hidden="true" class="im im-airplane"></span>
+						<span>Find a cheap flight and buy tickets</span>
+					</li>
+					<li>
+						<span aria-hidden="true" class="im im-office"></span>
+						<span>Make your hotel reservation</span>
+					</li>
+					<li>
+						<span aria-hidden="true" class="im im-happy"></span>
+						<span>Enjoy!</span>
+					</li>
+				</ul>
+			</div>
+
+			<div class="grid_1of2">
+				<h3>What SARA does to travel</h3>
+				<ul>
+					<li>
+						<span aria-hidden="true" class="im im-wondering"></span>
+						<span>Get caught in the vicious circle web-telephone-web-telephone-web...</span>
+						<p class="icons">
+							<span aria-hidden="true" class="im im-screen"></span>
+							<span aria-hidden="true" class="im im-tab"></span>
+							<span aria-hidden="true" class="im im-phone"></span>
+						</p>
+					</li>
+					<li>
+						<span aria-hidden="true" class="im im-sad"></span>
+						<span>Fill never-ending ultra-mega-long-and-boring-and-zero-UX forms that reset magically</span>
+						<p class="icons">
+							<span aria-hidden="true" class="im im-file2"></span>
+							<span aria-hidden="true" class="im im-arrow-right"></span>
+							<span aria-hidden="true" class="im im-file"></span>
+						</p>
+					</li>
+					<li>
+						<span aria-hidden="true" class="im im-angry"></span>
+						<span>Face "the conspiracy theory": Miss Sara, you are a liar!</span>
+					</li>
+					<li>
+						<span aria-hidden="true" class="im im-close"></span>
+						<span>Still no tickets...</span>
+					</li>
+					<li>
+						<span aria-hidden="true" class="im im-close"></span>
+						<span>Still no hotel reservation...</span>
+					</li>
+					<li>
+						<span aria-hidden="true" class="im im-close"></span>
+						<span>Still in Lebanon...</span>
+					</li>
+					<li>
+						<span aria-hidden="true" class="im im-close"></span>
+						<span>Call the conference organizers to cancel invitation.</span>
+					</li>
+				</ul>
+			</div>
+		</section>
+		
+		<section class="important">
+			<h2>Please, we want to see her demos!</h2>
+			<p>Sara loves her country, as much as she loves the web. All she wants to do is to talk about what she loves: web development. She has the ability to blow our minds with her fascinating demos.</p>
+		</section>
+
+		<section class="stop">
+			<h2>
+			<span class="one">Don't</span>
+			<span class="two">deny her</span>
+			<span class="thr">a visa</span></h2>
+			
+			<blockquote cite="http://en.wikiquote.org/wiki/Carl_Sagan#Cosmos_.281980.29">
+				<span aria-hidden="true" class="im im-quotes"></span>
+				<p><em>National boundaries are not evident when we view the Earth from space. Fanatical ethnic or religious or national chauvinisms are a little difficult to maintain when we see our planet as a fragile blue crescent fading to become an inconspicuous point of light against the bastion and citadel of the stars. Travel is broadening.</em><p>
+				<span>Carl Sagan, COSMOS (p. 318) 1980.</span>
+			</blockquote>
+			
+			<p class="ribbon">We want her! WE WANT MOAR SARA TALKS PLEASE!</p>
+		</section>
+		
+		
+		<footer>
+			<p>Send your death threats to <a href="https://twitter.com/_mestevens">@_mestevens</a></p>
+			<p>Improve this crappy code: <a href="https://github.com/me-stevens/avisaforsara">avisaforsara on GH</a></p>
+			<div class="small">
+				<p>I made this just for fun. And because I want to see more talks by Sara.</p>
+			</div>
+		</footer>
+
+	</body>
+</html>

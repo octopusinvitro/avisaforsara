@@ -1,0 +1,502 @@
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background:0 0}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:700}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
+/*
+       ALIENS.
+░░░░░░░▀▄░░░▄▀░░░░░░░░    
+░░░░░░▄█▀███▀█▄░░░░░░░
+░░░░░█▀███████▀█░░░░░░
+░░░░░█░█▀▀▀▀▀█░█░░░░░░
+░░░░░░░░▀▀░▀▀░░░░░░░░░ 
+  ALIENS EVERYWHERE
+
+:: Brought to you by alien number 42  ::
+:: (known by humans as M. E. Stevens) ::
+
+*/
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+body{
+	font-family: 'Imprima', sans-serif;
+    font-weight: 300;
+    font-size: 100%;
+    color: #555;
+	-webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+}
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+textarea {
+    resize: vertical;
+}
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+header, 
+section, 
+footer, 
+div, 
+p, 
+span, 
+img,
+h2 {
+	box-sizing: border-box;
+}
+header, 
+section, 
+footer{
+	margin:0;
+	padding:3em 5%;
+}
+header{
+	background-color: #1cafb7;
+	color:#fff;
+	padding-top:1px;
+}
+header img{
+	display:block;
+	margin:auto;
+	padding:.5em;
+	border:.5em solid #10676b;
+	border-radius:50%;
+}
+header img:hover{
+	background-color:white;
+}
+.text-center{
+	text-align:center;
+}
+.grid_1of2{
+	vertical-align:middle;
+	margin:0;
+}
+.visa{
+	display:block;
+	margin:1em auto 0;
+	padding:.5em 1em;
+	background-color:#10676b;
+	font-weight:700;
+	text-align:center;
+	border-radius:.5em;
+}
+a{
+	text-decoration:none;
+	color: #10676b;
+	font-weight:700;
+}
+a:hover {
+	color:#b7382f;
+}
+h1 {
+	font-size: 3em;
+    color: #10676b;
+	text-align:center;
+}
+h2 {
+    font-family: 'Imprima', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Bree Serif', serif;
+    font-weight: 700;
+    color: #10676b;
+}
+
+p {
+    line-height: 1.5em;
+    margin-bottom: 1.5em;
+}
+.context{
+}
+.traveling{
+	background-color:#b7382f;
+	color:#f4f4f4;
+}
+.traveling h2,
+.traveling h3{
+    color: #f4f4f4;
+}
+.traveling h3{
+	margin:3em 0;
+}
+.traveling .grid_1of2{
+	vertical-align:top;
+}
+ul, li {
+	list-style-type:none
+}
+ul{
+	margin:0;
+	padding:0;
+}
+.traveling li{
+	padding:1em 0;
+	border-bottom: .1em dashed #e9575a;
+}
+.traveling span{
+	display:inline-block;
+	vertical-align:middle;
+	width:60%;
+}
+.traveling .im{
+	width:1em;
+	margin-right:.5em;
+	font-size:300%;
+	color: #e9575a;
+}
+.icons {
+	text-align:center;
+	margin-bottom:0;
+}
+.icons .im, .text{
+	color: #f4f4f4;
+	margin:0 2%;
+}
+.icons .im{
+	font-size:150%;
+}
+.text{
+	width:3em;
+}
+.important{
+	background-color:#ddd2c0;
+}
+.important h2{
+	color:#fea501;
+}
+.stop{
+	font-weight:700;
+}
+.stop h2{
+	position:relative;
+	padding:.2em;
+	margin:3em auto;
+	width:5.5em;
+	height:5.5em;
+	border-radius:50%;
+	text-align:center;
+	border:.05em dashed #b7382f;
+	background-color:#ddd2c0;
+	box-shadow: 
+		0 0 0 .2em #ddd2c0,
+		0 0 0 .3em #b7382f,
+		0 0 0 1.2em #ddd2c0,
+		0 0 0 1.3em #b7382f,
+		0 0 0 1.5em #ddd2c0,
+		0 0 0 1.8em #b7382f;		
+	transform: rotate(-30deg);
+	text-transform:uppercase;
+	color:#b7382f;
+}
+h2 span{
+	display:block;
+}
+.one{
+	margin-bottom:2.2em;
+}
+.two{
+	position: absolute;
+	top:50%; left:50%;
+	margin: -1.2em 0 0 -5em;
+	padding:.5em 0;
+	width:10em;
+	background-color:#b7382f;
+	color:#ddd2c0;
+	letter-spacing:.3em;
+	border-radius:.4em;
+}
+blockquote{
+	padding:0em;
+	margin:0;
+}
+blockquote .im, blockquote p{
+	display:inline-block;
+	vertical-align:top;
+}
+blockquote .im{
+	width:10%;
+	font-size:400%;
+	color:#ddd2c0;
+}
+blockquote p{
+	width:85%;
+	margin-top:0;
+}
+.ribbon {
+	margin: 3em auto 0;
+	padding:.5em 1em;
+	text-shadow: -2px 2px 0 maroon;
+	font-size:150%;
+	text-align: center;
+	background-color:#b7382f;
+	color:#ddd2c0;
+	border-radius:.4em;
+}
+
+footer{
+	background-color:#10676b;
+	color:#1cafb7;
+	font-size:.8em;
+}
+footer p{
+	margin:0;
+	padding: 0;
+	text-align:center;
+}
+footer a{
+	color:#a1eded;
+}
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+.invisible {
+    visibility: hidden;
+}
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+
+@media only screen and (min-width: 29.5em) { /*  480px */
+	.visa{
+		width:50%;
+	}
+	.traveling span{
+		width:65%;
+	}
+	ul{
+		width:90%;
+		margin:auto;
+	}
+}
+@media only screen and (min-width: 39.5em) { /*  640px */
+	header{
+		padding:1px 20% 3em;
+	}
+	.traveling span{
+		width:70%;
+	}
+}
+@media only screen and (min-width: 47.5em) { /* 768px */
+	section,
+	footer{
+		padding:3em 10%;
+	}
+	.traveling span{
+		width:75%;
+	}
+}
+@media only screen and (min-width: 59.5em) { /* 960px */
+	.grid_1of2{
+		display:inline-block;
+		width:49%;
+	}
+	section,
+	footer{
+		padding:3em 15%;
+	}	
+	.visa{
+		width:20em;
+	}
+	.traveling span{
+		width:60%;
+	}
+	blockquote{
+		background-color:white;
+		background-color:rgba(255,255,255,.7);
+		padding:1em;
+		padding-left:5em;
+		border-radius:.4em;
+	}
+	.stop{
+		background: white url('worldmap.svg') center center no-repeat;
+		background-size:100% ;
+	}
+	.ribbon{
+		width:15em;
+	}
+}
+@media only screen and (min-width: 69.5em) { /* 1120px */
+	header{
+		padding:3em 25%;
+	}
+	section,
+	footer{
+		padding:3em 20%;
+	}
+	.traveling span{
+		width:65%;
+	}
+}
+@media only screen and (min-width: 79.5em) { /* 1280px */
+	section,
+	footer{
+		padding:3em 25%;
+	}
+	.traveling span{
+		width:70%;
+	}
+}
+@media only screen and (min-width: 89.5em) { /* 1440px */
+	header,
+	section,
+	footer{
+		padding:3em 30%;
+	}
+}
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
